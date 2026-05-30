@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M/S Aditya Agro Industries – Pure Mustard Oil | Ambedkarnagar, UP</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C8861A;
+    --gold-light: #F0C96B;
+    --gold-pale: #FDF4DC;
+    --dark: #1A1200;
+    --dark2: #2E2000;
+    --brown: #6B3D00;
+    --cream: #FFFBF0;
+    --text: #2E1A00;
+    --text2: #6B4E1A;
+    --green: #2D5A1B;
+    --green-light: #4A8A2C;
+    --border: rgba(200,134,26,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(26,18,0,0.97);
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%;
+    height: 68px;
+    border-bottom: 1px solid rgba(200,134,26,0.3);
+  }
+
+  .nav-brand {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .nav-logo {
+    width: 40px; height: 40px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900; color: #fff;
+    font-size: 18px;
+  }
+
+  .nav-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-light);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .nav-name span {
+    display: block;
+    font-size: 11px;
+    color: rgba(240,201,107,0.6);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex; gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+    letter-spacing: 0.3px;
+  }
+
+  .nav-links a:hover { color: var(--gold-light); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: #B07218 !important; color: #fff !important; }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1A1200 0%, #2E2000 50%, #1A1200 100%);
+    display: flex; align-items: center;
+    padding: 100px 5% 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 70% 50%, rgba(200,134,26,0.12) 0%, transparent 60%),
+      radial-gradient(circle at 20% 80%, rgba(200,134,26,0.07) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .hero-pattern {
+    position: absolute; right: 0; top: 0; bottom: 0; width: 55%;
+    opacity: 0.06;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #C8861A 0px, #C8861A 1px, transparent 1px, transparent 30px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      #C8861A 0px, #C8861A 1px, transparent 1px, transparent 30px
+    );
+  }
+
+  .hero-content {
+    max-width: 580px;
+    position: relative; z-index: 2;
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(200,134,26,0.15);
+    border: 1px solid rgba(200,134,26,0.4);
+    border-radius: 24px;
+    padding: 6px 16px;
+    margin-bottom: 28px;
+  }
+
+  .hero-badge span {
+    font-size: 12px; font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold-light);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 68px);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold-light);
+    display: block;
+  }
+
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 480px;
+    font-weight: 300;
+  }
+
+  .hero-buttons {
+    display: flex; gap: 16px; flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+
+  .btn-primary:hover {
+    background: #B07218;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(200,134,26,0.35);
+  }
+
+  .btn-outline {
+    border: 1.5px solid rgba(240,201,107,0.5);
+    color: var(--gold-light);
+    padding: 14px 32px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover {
+    background: rgba(240,201,107,0.1);
+    border-color: var(--gold-light);
+  }
+
+  .hero-stats {
+    display: flex; gap: 40px;
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(200,134,26,0.2);
+  }
+
+  .stat-item {
+    text-align: left;
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    display: block;
+  }
+
+  .hero-visual {
+    position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .oil-bottle-svg {
+    width: 300px;
+    filter: drop-shadow(0 30px 60px rgba(200,134,26,0.3));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  /* ===== SECTION TITLES ===== */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--text2);
+    line-height: 1.7;
+    max-width: 560px;
+    font-weight: 300;
+  }
+
+  /* ===== TRUST STRIP ===== */
+  .trust-strip {
+    background: var(--gold);
+    padding: 18px 5%;
+    display: flex; align-items: center; justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex; align-items: center; gap: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .trust-icon {
+    width: 28px; height: 28px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+
+  /* ===== ABOUT ===== */
+  .section { padding: 90px 5%; }
+  .section-alt { background: #fff; }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-image-wrap {
+    position: relative;
+  }
+
+  .about-img-main {
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FDF4DC, #F5E6B0);
+    height: 420px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mustard-field-svg {
+    width: 90%;
+  }
+
+  .about-badge-float {
+    position: absolute;
+    bottom: -20px; right: -20px;
+    background: var(--green);
+    border-radius: 16px;
+    padding: 20px 24px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  }
+
+  .about-badge-float strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+  }
+
+  .about-badge-float span { font-size: 12px; opacity: 0.85; }
+
+  .about-content { padding: 20px 0; }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .about-feat {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 16px;
+    background: var(--gold-pale);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .feat-dot {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .about-feat p {
+    font-size: 14px; line-height: 1.5;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* ===== PRODUCTS ===== */
+  .products-section {
+    background: var(--dark);
+    padding: 90px 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .products-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 100%, rgba(200,134,26,0.1), transparent 60%);
+    pointer-events: none;
+  }
+
+  .products-header { text-align: center; margin-bottom: 60px; }
+  .products-header .section-title { color: #fff; }
+  .products-header .section-sub { color: rgba(255,255,255,0.55); margin: 0 auto; }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+  }
+
+  .product-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,134,26,0.25);
+    border-radius: 20px;
+    padding: 36px 28px 32px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card:hover {
+    background: rgba(200,134,26,0.08);
+    border-color: rgba(200,134,26,0.6);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+
+  .product-card.featured {
+    border-color: var(--gold);
+    background: rgba(200,134,26,0.1);
+  }
+
+  .product-card.featured::before {
+    content: 'BESTSELLER';
+    position: absolute; top: 16px; right: -28px;
+    background: var(--gold);
+    color: #fff; font-size: 10px; font-weight: 700;
+    padding: 4px 36px;
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+  }
+
+  .product-icon {
+    width: 80px; height: 80px;
+    margin: 0 auto 20px;
+    background: rgba(200,134,26,0.15);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .product-icon svg { width: 44px; height: 44px; }
+
+  .product-size {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .product-unit {
+    font-size: 16px; color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .product-name {
+    color: #fff; font-size: 16px; font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .product-desc {
+    color: rgba(255,255,255,0.45);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .product-btn {
+    display: inline-block;
+    border: 1px solid rgba(200,134,26,0.5);
+    color: var(--gold-light);
+    padding: 10px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .product-btn:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #fff;
+  }
+
+  .bulk-card {
+    background: linear-gradient(135deg, rgba(200,134,26,0.2), rgba(200,134,26,0.05));
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    padding: 40px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .bulk-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #fff; font-size: 26px; margin-bottom: 8px;
+  }
+
+  .bulk-card p {
+    color: rgba(255,255,255,0.6); font-size: 15px; max-width: 420px;
+  }
+
+  .bulk-highlights {
+    display: flex; gap: 32px; margin-top: 16px;
+  }
+
+  .bulk-h { text-align: center; }
+  .bulk-h strong { display: block; color: var(--gold-light); font-size: 20px; font-family: 'Playfair Display', serif; }
+  .bulk-h span { color: rgba(255,255,255,0.45); font-size: 12px; }
+
+  /* ===== BENEFITS ===== */
+  .benefits-section {
+    padding: 90px 5%;
+    background: var(--cream);
+  }
+
+  .benefits-header { text-align: center; margin-bottom: 60px; }
+  .benefits-header .section-sub { margin: 0 auto; }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .benefit-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 32px;
+    border: 1px solid rgba(200,134,26,0.12);
+    transition: all 0.3s;
+    display: flex; gap: 20px;
+  }
+
+  .benefit-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 12px 40px rgba(200,134,26,0.1);
+    transform: translateY(-4px);
+  }
+
+  .benefit-icon-wrap {
+    width: 56px; height: 56px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+  }
+
+  .benefit-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .benefit-content p {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ===== WHY US ===== */
+  .why-section {
+    background: var(--gold-pale);
+    padding: 90px 5%;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .why-list { margin-top: 36px; }
+
+  .why-item {
+    display: flex; align-items: flex-start; gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .why-item:last-child { border-bottom: none; }
+
+  .why-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(200,134,26,0.3);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 48px;
+  }
+
+  .why-text h4 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--dark); }
+  .why-text p { font-size: 14px; color: var(--text2); line-height: 1.6; font-weight: 300; }
+
+  .why-visual {
+    background: #fff;
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .process-steps {
+    display: flex; flex-direction: column; gap: 0;
+  }
+
+  .process-step {
+    display: flex; align-items: flex-start; gap: 20px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 28px;
+  }
+
+  .process-step:last-child { padding-bottom: 0; }
+
+  .process-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 19px; top: 40px; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+
+  .step-circle {
+    width: 40px; height: 40px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .step-text h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; color: var(--dark); }
+  .step-text p { font-size: 13px; color: var(--text2); line-height: 1.6; }
+
+  /* ===== CONTACT ===== */
+  .contact-section {
+    background: var(--dark2);
+    padding: 90px 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(200,134,26,0.08), transparent 60%);
+    pointer-events: none;
+  }
+
+  .contact-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    position: relative; z-index: 1;
+  }
+
+  .contact-info .section-title { color: #fff; }
+  .contact-info .section-sub { color: rgba(255,255,255,0.5); }
+
+  .contact-details { margin-top: 40px; display: flex; flex-direction: column; gap: 24px; }
+
+  .contact-row {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+
+  .c-icon {
+    width: 44px; height: 44px;
+    background: rgba(200,134,26,0.15);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    border: 1px solid rgba(200,134,26,0.3);
+  }
+
+  .c-text strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .c-text p, .c-text a {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+
+  .c-text a:hover { color: var(--gold-light); }
+
+  .contact-form-wrap {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,134,26,0.2);
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  .contact-form-wrap h3 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(200,134,26,0.25);
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-group select { cursor: pointer; }
+  .form-group select option { background: #2E2000; }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+  }
+
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  .form-submit {
+    width: 100%;
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .form-submit:hover { background: #B07218; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark);
+    padding: 40px 5%;
+    border-top: 1px solid rgba(200,134,26,0.2);
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-light);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .footer-brand span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  .footer-links {
+    display: flex; gap: 32px;
+    list-style: none;
+  }
+
+  .footer-links a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--gold-light); }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .about-grid, .why-grid, .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { display: none; }
+    .hero h1 { font-size: 36px; }
+    .hero { padding: 110px 5% 60px; }
+    .nav-links { display: none; }
+    .about-badge-float { bottom: -10px; right: -10px; }
+    .bulk-card { flex-direction: column; }
+    .footer-links { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    .about-features { grid-template-columns: 1fr; }
+    .trust-strip { gap: 20px; }
+    .products-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-logo">A</div>
+    <div class="nav-name">
+      M/S Aditya Agro Industries
+      <span>Pure Mustard Oil</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#contact" class="nav-cta">Order Now</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span>100% Pure &amp; Natural</span>
+    </div>
+    <h1>
+      Khaalis Sarson ka Tel<br>
+      <em>From the Heart of UP</em>
+    </h1>
+    <p>
+      Traditional cold-pressed pure mustard oil straight from our fields in Ambedkarnagar. No adulteration, no blending — just the authentic flavour and nutrition your family deserves.
+    </p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        View Products
+      </a>
+      <a href="#contact" class="btn-outline">Bulk Order Enquiry</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Pure Mustard</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">0%</span>
+        <span class="stat-label">Adulteration</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Pack Sizes</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mustard Oil Bottle Illustration -->
+  <div class="hero-visual">
+    <svg class="oil-bottle-svg" viewBox="0 0 220 400" xmlns="http://www.w3.org/2000/svg">
+      <!-- Bottle body -->
+      <defs>
+        <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#D4A017;stop-opacity:1" />
+          <stop offset="40%" style="stop-color:#F5CC4A;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#A07010;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="labelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#1A1200;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#2E2000;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="oilGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#C8861A;stop-opacity:0.9" />
+          <stop offset="50%" style="stop-color:#F0C96B;stop-opacity:0.95" />
+          <stop offset="100%" style="stop-color:#C8861A;stop-opacity:0.9" />
+        </linearGradient>
+      </defs>
+      <!-- Cap -->
+      <rect x="82" y="30" width="56" height="18" rx="4" fill="#2E2000"/>
+      <rect x="78" y="44" width="64" height="12" rx="3" fill="#1A1200"/>
+      <!-- Neck -->
+      <path d="M88 56 Q82 80 70 110 L70 130 L150 130 L150 110 Q138 80 132 56 Z" fill="url(#bottleGrad)"/>
+      <!-- Body -->
+      <path d="M65 128 Q60 140 60 160 L60 320 Q60 350 110 355 Q160 350 160 320 L160 160 Q160 140 155 128 Z" fill="url(#bottleGrad)"/>
+      <!-- Oil glow inside -->
+      <path d="M70 165 Q65 175 65 195 L65 315 Q65 340 110 344 Q155 340 155 315 L155 195 Q155 175 150 165 Z" fill="url(#oilGrad)" opacity="0.4"/>
+      <!-- Label -->
+      <rect x="68" y="180" width="84" height="120" rx="8" fill="url(#labelGrad)"/>
+      <!-- Label gold border -->
+      <rect x="70" y="182" width="80" height="116" rx="6" fill="none" stroke="#C8861A" stroke-width="1.5"/>
+      <!-- Label text: Company -->
+      <text x="110" y="206" text-anchor="middle" fill="#C8861A" font-size="7.5" font-family="serif" font-weight="700" letter-spacing="0.5">ADITYA AGRO</text>
+      <text x="110" y="217" text-anchor="middle" fill="#C8861A" font-size="6" font-family="serif" letter-spacing="0.3">INDUSTRIES</text>
+      <!-- Mustard plant deco -->
+      <line x1="110" y1="222" x2="110" y2="238" stroke="#C8861A" stroke-width="1"/>
+      <circle cx="102" cy="226" r="3" fill="#F0C96B" opacity="0.8"/>
+      <circle cx="118" cy="226" r="3" fill="#F0C96B" opacity="0.8"/>
+      <circle cx="106" cy="230" r="2.5" fill="#F0C96B" opacity="0.7"/>
+      <circle cx="114" cy="230" r="2.5" fill="#F0C96B" opacity="0.7"/>
+      <circle cx="110" cy="238" r="3" fill="#F0C96B" opacity="0.9"/>
+      <!-- PURE MUSTARD OIL -->
+      <text x="110" y="258" text-anchor="middle" fill="#FFFFFF" font-size="9" font-family="serif" font-weight="700">PURE</text>
+      <text x="110" y="270" text-anchor="middle" fill="#F0C96B" font-size="8" font-family="serif" font-weight="700">MUSTARD OIL</text>
+      <!-- Line decoration -->
+      <line x1="76" y1="276" x2="144" y2="276" stroke="#C8861A" stroke-width="0.5"/>
+      <!-- 100% natural -->
+      <text x="110" y="288" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6.5" font-family="sans-serif">100% PURE &amp; NATURAL</text>
+      <!-- Shine effect -->
+      <path d="M72 155 Q76 120 86 105" stroke="rgba(255,255,255,0.25)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <div class="trust-icon">✅</div>
+    FSSAI Compliant
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">🌿</div>
+    No Artificial Colours
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">🧪</div>
+    Zero Adulteration
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">🚚</div>
+    Pan-India Delivery
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">📦</div>
+    Bulk Orders Welcome
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="section section-alt" id="about">
+  <div class="about-grid">
+    <div class="about-image-wrap">
+      <div class="about-img-main">
+        <!-- Mustard Field SVG Illustration -->
+        <svg class="mustard-field-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sky -->
+          <rect width="400" height="300" fill="#FEF9E7"/>
+          <!-- Sun -->
+          <circle cx="340" cy="50" r="35" fill="#F5CC4A" opacity="0.5"/>
+          <circle cx="340" cy="50" r="24" fill="#F5CC4A" opacity="0.8"/>
+          <!-- Ground rows -->
+          <rect x="0" y="220" width="400" height="80" fill="#C8861A" opacity="0.15"/>
+          <!-- Mustard plants -->
+          <g id="plant">
+            <line x1="0" y1="0" x2="0" y2="-60" stroke="#4A8A2C" stroke-width="2"/>
+            <line x1="0" y1="-20" x2="-15" y2="-35" stroke="#4A8A2C" stroke-width="1.5"/>
+            <line x1="0" y1="-30" x2="15" y2="-45" stroke="#4A8A2C" stroke-width="1.5"/>
+            <circle cx="0" cy="-62" r="5" fill="#F5CC4A"/>
+            <circle cx="-15" cy="-37" r="4" fill="#F5CC4A"/>
+            <circle cx="15" cy="-47" r="4" fill="#F5CC4A"/>
+          </g>
+          <!-- Row of plants -->
+          <g transform="translate(20,220)">
+            <use href="#plant" transform="scale(1,0.9)"/>
+          </g>
+          <g transform="translate(50,225)">
+            <use href="#plant"/>
+          </g>
+          <g transform="translate(80,218)">
+            <use href="#plant" transform="scale(1,1.1)"/>
+          </g>
+          <g transform="translate(110,222)">
+            <use href="#plant" transform="scale(1,0.95)"/>
+          </g>
+          <g transform="translate(140,220)">
+            <use href="#plant"/>
+          </g>
+          <g transform="translate(170,224)">
+            <use href="#plant" transform="scale(1,0.85)"/>
+          </g>
+          <g transform="translate(200,219)">
+            <use href="#plant" transform="scale(1,1.05)"/>
+          </g>
+          <g transform="translate(230,223)">
+            <use href="#plant"/>
+          </g>
+          <g transform="translate(260,220)">
+            <use href="#plant" transform="scale(1,0.92)"/>
+          </g>
+          <g transform="translate(290,222)">
+            <use href="#plant"/>
+          </g>
+          <g transform="translate(320,218)">
+            <use href="#plant" transform="scale(1,1.08)"/>
+          </g>
+          <g transform="translate(355,221)">
+            <use href="#plant" transform="scale(1,0.88)"/>
+          </g>
+          <!-- Label -->
+          <rect x="100" y="130" width="200" height="60" rx="10" fill="rgba(26,18,0,0.75)"/>
+          <text x="200" y="155" text-anchor="middle" fill="#F0C96B" font-size="14" font-family="serif" font-weight="700">Samdeeh, Ambedkarnagar</text>
+          <text x="200" y="176" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11" font-family="sans-serif">Freshly harvested mustard seeds</text>
+        </svg>
+      </div>
+      <div class="about-badge-float">
+        <strong>Farm</strong>
+        <span>to Bottle</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Seedha Khet se<br>Aapki Rasoi tak</h2>
+      <p class="section-sub">
+        M/S Aditya Agro Industries, founded by <strong>Mr. Aditya Pratap Yadav</strong>, is rooted in the fertile lands of Village &amp; Post Samdeeh, District Ambedkarnagar, Uttar Pradesh. We produce 100% pure mustard oil using traditional methods — preserving the natural pungency, aroma, and nutrients that our ancestors valued.
+      </p>
+      <p class="section-sub" style="margin-top:16px;">
+        Koi milawat nahi, koi compromise nahi — sirf khaalis sarson ka tel jo aapke swasthya aur khane ke swaad dono ke liye best hai.
+      </p>
+      <div class="about-features">
+        <div class="about-feat">
+          <div class="feat-dot"></div>
+          <p>Locally sourced premium mustard seeds from UP farms</p>
+        </div>
+        <div class="about-feat">
+          <div class="feat-dot"></div>
+          <p>Cold-pressed kachi ghani method retained</p>
+        </div>
+        <div class="about-feat">
+          <div class="feat-dot"></div>
+          <p>No blending with other oils or chemicals</p>
+        </div>
+        <div class="about-feat">
+          <div class="feat-dot"></div>
+          <p>Strict quality check at every production stage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="products-section" id="products">
+  <div class="products-header">
+    <p class="section-label" style="color:var(--gold-light);">Our Range</p>
+    <h2 class="section-title">Har Ghar ke liye<br>Sahi Size</h2>
+    <p class="section-sub">Available in convenient pack sizes to suit every household and business need.</p>
+  </div>
+
+  <div class="products-grid">
+    <!-- 1 Litre -->
+    <div class="product-card">
+      <div class="product-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="16" y="6" width="12" height="4" rx="2" fill="#C8861A"/>
+          <path d="M14 10 Q10 18 10 24 L10 36 Q10 40 22 40 Q34 40 34 36 L34 24 Q34 18 30 10 Z" fill="#F0C96B" opacity="0.3"/>
+          <path d="M14 10 Q10 18 10 24 L10 36 Q10 40 22 40 Q34 40 34 36 L34 24 Q34 18 30 10 Z" stroke="#C8861A" stroke-width="1.5" fill="none"/>
+          <text x="22" y="28" text-anchor="middle" fill="#C8861A" font-size="8" font-weight="700" font-family="serif">OIL</text>
+        </svg>
+      </div>
+      <div class="product-size">1</div>
+      <div class="product-unit">Litre Bottle</div>
+      <div class="product-name">Family Pack</div>
+      <div class="product-desc">Perfect for small families. Airtight sealed premium bottle with convenient grip design.</div>
+      <a href="#contact" class="product-btn">Order Now</a>
+    </div>
+
+    <!-- 5 Litre -->
+    <div class="product-card featured">
+      <div class="product-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="14" y="4" width="16" height="5" rx="2" fill="#C8861A"/>
+          <path d="M12 9 Q8 18 8 26 L8 36 Q8 41 22 41 Q36 41 36 36 L36 26 Q36 18 32 9 Z" fill="#F0C96B" opacity="0.25"/>
+          <path d="M12 9 Q8 18 8 26 L8 36 Q8 41 22 41 Q36 41 36 36 L36 26 Q36 18 32 9 Z" stroke="#C8861A" stroke-width="2" fill="none"/>
+          <text x="22" y="27" text-anchor="middle" fill="#C8861A" font-size="9" font-weight="700" font-family="serif">OIL</text>
+        </svg>
+      </div>
+      <div class="product-size">5</div>
+      <div class="product-unit">Litre Can</div>
+      <div class="product-name">Value Pack – Best Seller</div>
+      <div class="product-desc">Ideal for medium-large families or monthly stock. Tamper-proof handle can with easy pour spout.</div>
+      <a href="#contact" class="product-btn">Order Now</a>
+    </div>
+
+    <!-- 15 Litre -->
+    <div class="product-card">
+      <div class="product-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="3" width="20" height="5" rx="2" fill="#C8861A"/>
+          <rect x="10" y="8" width="24" height="34" rx="4" fill="#F0C96B" opacity="0.2"/>
+          <rect x="10" y="8" width="24" height="34" rx="4" stroke="#C8861A" stroke-width="2" fill="none"/>
+          <line x1="14" y1="20" x2="30" y2="20" stroke="#C8861A" stroke-width="0.8"/>
+          <line x1="14" y1="28" x2="30" y2="28" stroke="#C8861A" stroke-width="0.8"/>
+          <text x="22" y="35" text-anchor="middle" fill="#C8861A" font-size="8" font-weight="700" font-family="serif">OIL</text>
+        </svg>
+      </div>
+      <div class="product-size">15</div>
+      <div class="product-unit">Litre Drum</div>
+      <div class="product-name">Large Home / Dhaba Pack</div>
+      <div class="product-desc">Best value for large families, hotels, dhabas, and caterers. Robust container with safe seal.</div>
+      <a href="#contact" class="product-btn">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Bulk Order Card -->
+  <div class="bulk-card" id="bulk">
+    <div>
+      <h3>📦 Bulk Orders – Wholesale &amp; Trade</h3>
+      <p>
+        Looking for bulk supply for your shop, restaurant, catering business, or resale? We offer competitive wholesale pricing with direct dispatch from our facility in Ambedkarnagar, UP.
+      </p>
+      <div class="bulk-highlights">
+        <div class="bulk-h">
+          <strong>50L+</strong>
+          <span>Min Bulk Order</span>
+        </div>
+        <div class="bulk-h">
+          <strong>Custom</strong>
+          <span>Labelling Available</span>
+        </div>
+        <div class="bulk-h">
+          <strong>Pan-India</strong>
+          <span>Delivery</span>
+        </div>
+      </div>
+    </div>
+    <a href="#contact" class="btn-primary" style="white-space:nowrap; flex-shrink:0;">
+      Get Bulk Quote →
+    </a>
+  </div>
+</section>
+
+<!-- ===== BENEFITS ===== -->
+<section class="benefits-section" id="benefits">
+  <div class="benefits-header">
+    <p class="section-label">Health Benefits</p>
+    <h2 class="section-title">Sarson ke Tel ke<br>Fayde – Science aur Tradition</h2>
+    <p class="section-sub">Our pure mustard oil is not just a cooking medium — it is a heritage of health, packed with nutrients nature intended.</p>
+  </div>
+
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#FEF3C7;">❤️</div>
+      <div class="benefit-content">
+        <h3>Heart Health (Dil ke liye)</h3>
+        <p>Rich in monounsaturated and polyunsaturated fatty acids (MUFA &amp; PUFA), mustard oil helps maintain healthy cholesterol levels and supports cardiovascular function when used in balanced quantities.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#D1FAE5;">🦠</div>
+      <div class="benefit-content">
+        <h3>Antibacterial &amp; Antifungal</h3>
+        <p>Contains allyl isothiocyanate which has natural antibacterial and antifungal properties — one reason our grandmothers used sarson ka tel for everything from cooking to skin care and massage.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#EDE9FE;">💪</div>
+      <div class="benefit-content">
+        <h3>Joints &amp; Muscles (Dard mein Rahat)</h3>
+        <p>Traditional mustard oil massage (malish) improves blood circulation, reduces joint pain, and relieves muscle stiffness. Its warming effect has been trusted in Indian households for centuries.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#FEE2E2;">🧠</div>
+      <div class="benefit-content">
+        <h3>Brain Function</h3>
+        <p>High in omega-3 fatty acids (ALA), pure mustard oil contributes to healthy brain and nerve function, especially important for growing children and elderly members of the family.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#ECFDF5;">🌿</div>
+      <div class="benefit-content">
+        <h3>Digestion &amp; Metabolism (Pachan Sudhar)</h3>
+        <p>Mustard oil stimulates digestive enzymes and bile production, improving digestion and metabolism. Its pungent components also help fight harmful gut bacteria naturally.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#FFF7ED;">✨</div>
+      <div class="benefit-content">
+        <h3>Skin &amp; Hair (Roop aur Baal)</h3>
+        <p>Rich in Vitamin E, Omega-3 and natural antioxidants — pure mustard oil nourishes skin, promotes hair growth, prevents dandruff, and has been the secret of Indian beauty routines for generations.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#F0F9FF;">🔥</div>
+      <div class="benefit-content">
+        <h3>High Smoke Point (Talna-Bhunna Perfect)</h3>
+        <p>With a high smoke point (~480°F / 249°C), mustard oil is ideal for deep frying, stir-frying, tadka and high-heat cooking — making it the undisputed king of Indian kitchen oils.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#FEF9C3;">🛡️</div>
+      <div class="benefit-content">
+        <h3>Immunity Booster (Rog Pratirodhak)</h3>
+        <p>Regular use of pure mustard oil in cooking has been associated with improved immune response, thanks to its selenium, zinc, and antioxidant content that fight free radicals in the body.</p>
+      </div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#F5F3FF;">🫁</div>
+      <div class="benefit-content">
+        <h3>Respiratory Benefits (Saans ki Taqleef mein)</h3>
+        <p>Steam inhalation with mustard oil or its application on the chest is a traditional remedy for congestion, bronchitis, and cold. Its natural compounds have decongestant properties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why-section" id="why-us">
+  <div class="why-grid">
+    <div>
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title">Hamara Farq –<br>Quality You Can Taste</h2>
+      <p class="section-sub">We don't just sell oil. We sell trust, tradition, and transparency. Yahan har baat seedhi aur sachi hai.</p>
+
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div class="why-text">
+            <h4>Direct from Our Own Processing Unit</h4>
+            <p>No middlemen, no traders. Oil comes straight from our facility in Samdeeh, Ambedkarnagar — fresh, pure, and fairly priced.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div class="why-text">
+            <h4>Traditional Kachi Ghani Method</h4>
+            <p>Cold-pressing retains all natural nutrients, pungency and aroma that modern refining strips away. Yahi sachcha sarson ka tel hai.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div class="why-text">
+            <h4>Strict Quality Testing</h4>
+            <p>Every batch goes through quality verification before dispatch — purity, moisture, free fatty acid levels and more are checked.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <div class="why-text">
+            <h4>Trusted by Local Households &amp; Traders</h4>
+            <p>From home kitchens to wholesale buyers across Uttar Pradesh — our reputation is built on consistent quality and honest dealings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-visual">
+      <p class="section-label" style="text-align:left; margin-bottom:24px;">Our Production Process</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-circle">1</div>
+          <div class="step-text">
+            <h4>Premium Seed Selection</h4>
+            <p>Only high-quality sarson seeds sourced from trusted local UP farmers. No mixed or low-grade seeds.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">2</div>
+          <div class="step-text">
+            <h4>Cleaning &amp; Drying</h4>
+            <p>Seeds are thoroughly cleaned, dried to optimal moisture level to remove impurities before pressing.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">3</div>
+          <div class="step-text">
+            <h4>Cold Pressing (Kachi Ghani)</h4>
+            <p>Low-heat expeller pressing at controlled temperature to extract pure oil while preserving all nutrients.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">4</div>
+          <div class="step-text">
+            <h4>Natural Settling &amp; Filtration</h4>
+            <p>Oil is allowed to naturally settle and then filtered — no chemical refining, bleaching or deodorization.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">5</div>
+          <div class="step-text">
+            <h4>Bottling &amp; Quality Check</h4>
+            <p>Sealed in food-grade containers after final quality verification and ready for dispatch to your doorstep.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <p class="section-label" style="color:var(--gold);">Get in Touch</p>
+      <h2 class="section-title">Order Karein ya<br>Baat Karein</h2>
+      <p class="section-sub">Whether you need a single bottle for home or a bulk consignment for your business — we are ready to serve. Koi bhi sawaal ho, seedha sampark karein.</p>
+
+      <div class="contact-details">
+        <div class="contact-row">
+          <div class="c-icon">📍</div>
+          <div class="c-text">
+            <strong>Address</strong>
+            <p>M/S Aditya Agro Industries<br>
+            Vill. &amp; Post: Samdeeh<br>
+            District: Ambedkarnagar, Uttar Pradesh</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon">👤</div>
+          <div class="c-text">
+            <strong>Owner / Proprietor</strong>
+            <p>Mr. Aditya Pratap Yadav</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div class="c-text">
+            <strong>Call / WhatsApp</strong>
+            <a href="tel:+919999999999">+91 [Contact Number]</a>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon">🕐</div>
+          <div class="c-text">
+            <strong>Business Hours</strong>
+            <p>Mon – Sat: 8:00 AM – 7:00 PM<br>Sunday: By Appointment</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon">📦</div>
+          <div class="c-text">
+            <strong>Available Pack Sizes</strong>
+            <p>1 Litre · 5 Litre · 15 Litre · Bulk (50L+)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h3>Send an Enquiry</h3>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Apna naam likhein">
+      </div>
+      <div class="form-group">
+        <label>Phone / WhatsApp</label>
+        <input type="tel" placeholder="+91 XXXXX XXXXX">
+      </div>
+      <div class="form-group">
+        <label>City / District</label>
+        <input type="text" placeholder="Aap kahan se hain?">
+      </div>
+      <div class="form-group">
+        <label>Pack Size Required</label>
+        <select>
+          <option value="">Select pack size</option>
+          <option>1 Litre Bottle</option>
+          <option>5 Litre Can</option>
+          <option>15 Litre Drum</option>
+          <option>Bulk Order (50L+)</option>
+          <option>Multiple / Custom</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message / Quantity Needed</label>
+        <textarea placeholder="Tell us your requirement — quantity, location, purpose (home/commercial), any special request..."></textarea>
+      </div>
+      <button class="form-submit" onclick="alert('Dhanyawaad! Hum jald hi aapse sampark karenge. 🙏')">Send Enquiry →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        M/S Aditya Agro Industries
+        <span>Pure Mustard Oil · Samdeeh, Ambedkarnagar, UP</span>
+      </div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="font-size:13px; color:rgba(255,255,255,0.3);">
+      Owner: Mr. Aditya Pratap Yadav
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2025 M/S Aditya Agro Industries. All Rights Reserved. | Samdeeh, Ambedkarnagar, Uttar Pradesh, India
+  </div>
+</footer>
+
+<script>
+  // Smooth nav highlight
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 100;
+      if (window.scrollY >= top) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.style.color = link.getAttribute('href') === '#' + current
+        ? '#F0C96B' : '';
+    });
+  });
+
+  // Nav shrink on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.height = window.scrollY > 50 ? '56px' : '68px';
+  });
+</script>
+</body>
+</html>
